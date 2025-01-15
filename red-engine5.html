@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red-Engine5 Launcher</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Trebuchet MS', Arial, sans-serif;
+            background: linear-gradient(135deg, #800000, #ff1a1a, #b30000);
+            background-size: 400% 400%;
+            animation: backgroundAnimation 10s infinite;
+            color: white;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        @keyframes backgroundAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .launcher-container {
+            text-align: center;
+            padding: 40px;
+            border-radius: 15px;
+            background: rgba(255, 0, 0, 0.85);
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+            width: 90%;
+            max-width: 600px;
+        }
+
+        .launcher-container h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+        }
+
+        .launcher-container p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: #fff8f8;
+        }
+
+        .launcher-container button {
+            padding: 15px 30px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            color: white;
+            background: #990000;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .launcher-container button:hover {
+            background: #cc0000;
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
+        }
+
+        .launcher-container button:active {
+            transform: scale(0.95);
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #f2f2f2;
+        }
+
+        .launcher-gif {
+            margin: 20px auto;
+            width: 100%;
+            max-width: 500px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="launcher-container">
+        <h1>Red-Engine5 Launcher</h1>
+        <p>Welcome to the ultimate experience. Launch your projects or explore the features now!</p>
+        <img src="launcher.gif" alt="Animated Red-Engine5" class="launcher-gif">
+        <button onclick="window.location.href='REd-Engine5_Launcher.exe'" download>Download Now</button>
+    </div>
+    <footer>&copy; 2025 Red-Engine5 Team. All rights reserved.</footer>
+</body>
+</html>
